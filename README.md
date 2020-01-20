@@ -3,6 +3,22 @@ Downloads segmented audio+video from Vimeo and saves as .mp4
 This script is useful for cases where youtube-dl is unable to find the master url,
 for example on pages that require login or cookies.
 
+Virtual Env
+=======
+
+```
+pip2 install virtualenv
+virtualenv .venv
+source .venv/bin/activate
+
+pip install -r requirements.txt
+python vimeo-download.py --url "http://...master.json?base64_init=1" --output
+
+deactivate
+
+```
+
+
 Installation 
 =======
 
